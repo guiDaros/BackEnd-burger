@@ -75,7 +75,7 @@ class App {
 }
 
 const appInstance = new App().app;
-const port = 3011;
+const port = process.env.PORT || 3011;
 
 appInstance.listen(port, () => {
     console.log(`🚀  server has been launched on port ${port}`);
