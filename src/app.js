@@ -42,7 +42,6 @@ import express from 'express';
 import path, { dirname } from 'path'; // Importando 'path' e 'dirname'
 import routes from './routes.js';
 import './database/index.js';
-import mongoose from 'mongoose';
 import cors from 'cors'
 
 const __filename = fileURLToPath(import.meta.url);
