@@ -47,10 +47,15 @@ import cors from 'cors'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const corsOptions = {
+    origin: 'https://front-end-burger-7cg4jh6d9-guilherme-daros-projects.vercel.app',
+    credentials: true,
+}
+
 class App {
     constructor() {
         this.app = express();
-        this.app.use(cors())
+        this.app.use(cors(corsOptions))
 
         this.middlewares();
         this.routes();
