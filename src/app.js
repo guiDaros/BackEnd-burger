@@ -48,9 +48,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const corsOptions = {
-    //origin: 'https://front-end-burger.vercel.app/login',
-    origin: '*', // Isso permite todas as origens
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: 'https://front-end-burger.vercel.app',
+    //origin: '*', // Isso permite todas as origens
+    //methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
 }
 

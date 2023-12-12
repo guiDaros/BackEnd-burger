@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "dependencies": {
+    "@authorizerdev/authorizer-react": "^1.1.19",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
