@@ -86,8 +86,6 @@ class CategoryController {
 
         return response.status(200).json({message:"Sucess!"});
     }
-
-
 }
 
 export default new CategoryController();
