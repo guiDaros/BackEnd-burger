@@ -4,15 +4,15 @@ class Category extends Model {
     static init(sequelize) {
         super.init(
             {
-                 name: Sequelize.STRING,
-                 path: Sequelize.STRING,
-                 url: {
+                name: Sequelize.STRING,
+                path: Sequelize.STRING,
+                url: {
                     type: Sequelize.VIRTUAL,
                     get() {
                         return `https://backend-burger-production.up.railway.app/category-file${this.path}`
                     },
                 },
-            }, 
+            },
             {
                 sequelize,
             }
