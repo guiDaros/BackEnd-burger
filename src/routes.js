@@ -7,11 +7,9 @@ import SessionController from "./app/controllers/SessionController.js";
 import ProductController from "./app/controllers/ProductController.js";
 import CategoryController from "./app/controllers/CategoryController.js";
 import OrderController from "./app/controllers/OrderController.js";
-
 import authMiddleware from './app/middlewares/auth.js'
 
 const upload = multer(multerConfig)
-
 const routes = new Router();
 
 routes.get('/', (req, res) => {
@@ -19,7 +17,6 @@ routes.get('/', (req, res) => {
 })
 
 routes.post('/users', UserController.store);
-
 routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddleware)
