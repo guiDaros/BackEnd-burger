@@ -1,24 +1,11 @@
-/*module.exports = {
+
+const configDatabase = {
     dialect: 'postgres',
     host: 'localhost',
     username: 'postgres',
     password: 'classen145',
     database: 'codeburguer',
-    define: {
-        timespamps: true,
-        underscored: true,
-        underscoredAll: true,
-    },
-}*/
-
-// ../config/database.js
-const configDatabase = {
-    dialect: 'postgres',
-    // host: 'localhost',
-    // username: 'postgres',
-    // password: 'classen145',
-    // database: 'codeburguer',
-    url: 'postgresql://postgres:G64fEgf-125gb1DcC2CdFf-A-DCcAadc@monorail.proxy.rlwy.net:37364/railway',
+    //url: 'postgresql://postgres:G64fEgf-125gb1DcC2CdFf-A-DCcAadc@monorail.proxy.rlwy.net:37364/railway',
     define: {
         timestamps: true,
         underscored: true,

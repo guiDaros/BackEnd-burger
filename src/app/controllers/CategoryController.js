@@ -72,20 +72,22 @@ class CategoryController {
 
         const category = await Category.findByPk(id)
 
-        if (!category) {
-            return response.status(401).json({ error: "Make sure your category ID is correct" })
+        if(!category){
+            return response.status(401).json({error:"Make sure your category ID is correct"})
         }
 
         let path
-        if (request.file) {
+        if(request.file){
             path = request.file.filename
         }
 
 
-        await Category.update({ name, path }, { where: { id } });
+        await Category.update({ name, path }, {where: { id }});
 
-        return response.status(200).json({ message: "Sucess!" });
+        return response.status(200).json({message:"Sucess!"});
     }
+
+
 }
 
 export default new CategoryController();

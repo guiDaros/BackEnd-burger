@@ -1,5 +1,6 @@
 import * as Yup from 'yup'
 import Product from '../models/Products.js'
+import { Model } from 'sequelize'
 import Category from '../models/Category.js'
 import User from '../models/User.js'
 
@@ -123,7 +124,7 @@ class ProductController {
             path,
             offer,
         },
-            { where: { id } }
+        { where: { id } }
         )
 
 
